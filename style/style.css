@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+h1 a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.inputs {
+  text-align: start;
+  margin: 10px 0px 0px 15px;
+}/*# sourceMappingURL=style.css.map */
