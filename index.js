@@ -16,6 +16,7 @@ const  formulario = (async () => {
   
   if (formValues) {
     Swal.fire(JSON.stringify(formValues))
+    localStorage.setItem('nombre y apellido',`${formValues}`)
   } 
   })()
 
