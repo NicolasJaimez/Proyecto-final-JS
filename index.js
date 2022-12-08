@@ -26,7 +26,6 @@ const lista = document.querySelector('#lista');
 const finalizarCompra = document.querySelector('#finalizarCompra');
 const agregarCarro = document.querySelector('.botonAgregar');
 
-
 const mostrarCat = async () => {
   const categoriasFetch = await fetch('https://fakestoreapi.com/products/categories')
   const categoriasJson = await categoriasFetch.json()
@@ -52,7 +51,6 @@ const buscarProductos = async () => {
           <p>${price}</p>
           <button id="${id}" class="btn btn-dark botonAgregar">Agregar</button>
         `
-
   });
 };
 
@@ -73,13 +71,8 @@ const buscarProductosCat = async () => {
       <button id="${id}" class="btn btn-dark botonAgregar">Agregar</button>
     `
   })
-
 };
 
 buscarProductos()
 mostrarCat()
 botonFiltrar.onclick = buscarProductosCat
-
-
-
-

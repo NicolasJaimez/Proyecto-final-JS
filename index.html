@@ -12,19 +12,19 @@
 </head>
 
 <body>
-    <h1><a href="index.html">Store N.J</a></h1>
+    <div class="background">
+        <h1><a href="index.html">Store N.J</a></h1>
 
-    <div class="inputs">
-        <select name="lista" id="lista"></select>
-        <button id="botonFiltrar" class="btn btn-dark">Filtrar</button>
-        <button id="finalizarCompra" class="btn btn-dark">Finalizar</button>
+        <div class="inputs">
+            <select name="lista" id="lista"></select>
+            <button id="botonFiltrar" class="btn btn-dark">Filtrar</button>
+            <button id="finalizarCompra" class="btn btn-dark">Finalizar</button>
+        </div>
+
+        <div class="container-fluid container__prod-prod">
+            <div class="row col d-flex justify-content-center" id="divProductos"></div>
+        </div>
     </div>
-
-    <div class="container-fluid container__prod-prod">
-        <div class="row col d-flex justify-content-center" id="divProductos"></div>
-        <button class="btn btn-dark botonAgregar">Agregar</button>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.15/dist/sweetalert2.all.min.js"></script>
     <script src="index.js"></script>
 </body>
