@@ -1,4 +1,4 @@
-const  formulario = (async () => {
+const formulario = (async () => {
 
   const { value: formValues } = await Swal.fire({
     title: 'Nombre y Apellido',
@@ -13,12 +13,12 @@ const  formulario = (async () => {
       ]
     }
   })
-  
+
   if (formValues) {
     Swal.fire(JSON.stringify(formValues))
-    localStorage.setItem('nombre y apellido',`${formValues}`)
-  } 
-  })()
+    localStorage.setItem('nombre y apellido', `${formValues}`)
+  }
+})()
 
 const botonFiltrar = document.querySelector('#botonFiltrar');
 const divProductos = document.querySelector('#divProductos');
@@ -39,7 +39,6 @@ const mostrarCat = async () => {
 const buscarProductos = async () => {
   const prodFetch = await fetch('https://fakestoreapi.com/products')
   const prodJson = await prodFetch.json()
-  //console.log(prodJson);
   prodJson.forEach(prod => {
     const { category, description, id, image, price, title } = prod
     divProductos.innerHTML += `
@@ -76,3 +75,4 @@ const buscarProductosCat = async () => {
 buscarProductos()
 mostrarCat()
 botonFiltrar.onclick = buscarProductosCat
+
