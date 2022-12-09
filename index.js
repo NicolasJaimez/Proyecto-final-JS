@@ -23,7 +23,6 @@ const formulario = (async () => {
 const botonFiltrar = document.querySelector('#botonFiltrar');
 const divProductos = document.querySelector('#divProductos');
 const lista = document.querySelector('#lista');
-const finalizarCompra = document.querySelector('#finalizarCompra');
 const agregarCarro = document.querySelector('.botonAgregar');
 
 const mostrarCat = async () => {
@@ -40,7 +39,7 @@ const buscarProductos = async () => {
   const prodFetch = await fetch('https://fakestoreapi.com/products')
   const prodJson = await prodFetch.json()
   prodJson.forEach(prod => {
-    const { category, description, id, image, price, title } = prod
+    const { description, id, image, price, title } = prod
     divProductos.innerHTML += `
         <div class="card" style="width: 15rem;">
         <img src="${image}" class="card-img-top">
@@ -59,7 +58,7 @@ const buscarProductosCat = async () => {
   const prodFetch = await fetch(`https://fakestoreapi.com/products/category/${catElegida}`)
   const prodJson = await prodFetch.json()
   prodJson.forEach(prod => {
-    const { category, description, id, image, price, title } = prod
+    const { description, id, image, price, title } = prod
     divProductos.innerHTML += `
     <div class="card" style="width: 18rem;">
     <img src="${image}" class="card-img-top">
