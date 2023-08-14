@@ -8,4 +8,4 @@ Esto es un proyecto terminado basico, creado con HTML, CSS , SASS , JavaScript
 * [LinkedIn](https://www.linkedin.com/in/nicolas-jaimez/)
 
 ## Ver ejemplo en Vivo
-- [ENLACEGITHUBPAGES] (https://nicolasjaimez.github.io/Proyecto-Final/)
+- [ENLACEGITHUBPAGES] (https://nicolasjaimez.github.io/Proyecto-final-JS/)
